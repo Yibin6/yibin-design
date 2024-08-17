@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The user interface of the Vue Glasses website, designed by Yibin.">
+
+    <meta property="og:title" content="Yibin Design - Vue Website">
+    <meta property="og:description" content="The user interface of the Vue Glasses website, designed by Yibin.">
+    <meta property="og:type" content="Website">
+    <meta property="og:url" content="https://yibin.design/vue-website.html">
+    <meta property="og:image" content="https://yibin.design/og_image.png">
+
+    <title>Yibin Design - Vue Website</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="fade-in vue--dark-green">
+    <header>
+        <input type="checkbox" id="toggler" title="toggler">
+        <nav class="nav nav--white">
+            <a class="nav__yibin fade-in" href="/">
+                <p>Yibin</p>
+                <p>Design</p>
+            </a>
+            <label for="toggler">
+                <span class="icon icon--white">
+                    <span class="icon__hamburger">
+                        <span></span>
+                        <span></span>
+                    </span>
+                </span>
+            </label>
+            <div class="nav__container">
+                <ul class="list nav__list">
+                    <li class="nav__item">
+                        <a href="/" class="btn">
+                            <div class="btn__text-container">
+                                <div class="btn__text" data-lang="nav-home">Home</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav__item active">
+                        <a href="/projects.html" class="btn">
+                            <div class="btn__text-container">
+                                <div class="btn__text" data-lang="nav-projects">Projects</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a id="contact-btn" class="btn">
+                            <div class="btn__text-container">
+                                <div class="btn__text" data-lang="nav-contact">Contact</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav__animation"></li>
+                </ul>
+            </div>
+            <div class="nav__lang fade-in">
+                <p data-lang="nav-language">Language</p>
+                <div class="nav__lang-selector">
+                    <a id="en-US" class="btn" data-selected="true">
+                        <div class="btn__text-container">
+                            <div class="btn__text">EN</div>
+                        </div>
+                    </a>
+                    <p>/</p>
+                    <a id="zh-CN" class="btn" data-selected="false">
+                        <div class="btn__text-container">
+                            <div class="btn__text">中文</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="block--contact">
+        <div class="contact zero-width">
+            <header class="contact__header fade-out">
+                <h4 data-lang="contact-title">Get in touch</h4>
+            </header>
+            <div class="contact__close fade-out">
+                <div class="icon icon--white">
+                    <div class="icon__close">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__info fade-out">
+                <img src="/images/wechat_qrcode_transparent.svg" alt="Yibin Design's Wechat QR Code">
+                <a href="mailto:yibin.design@gmail.com" class="btn btn--primary">
+                    <div class="btn__text-container">
+                        <div class="btn__text">yibin.design@gmail.com</div>
+                    </div>
+                </a>
+            </div>
+            <div class="contact__slogan fade-out">
+                <p>Let’s make something amazing together.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="block--banner">
+        <div class="banner banner--ui vue--dark-green">
+            <picture>
+                <source type="image/webp"
+                    srcset="/images/vue_website_banner.webp 1x, /images/vue_website_banner@2x.webp 2x">
+                <source type="image/jpg"
+                    srcset="/images/vue_website_banner.jpg 1x, /images/vue_website_banner@2x.jpg 2x">
+                <img src="/images/vue_website_banner@2x.jpg" alt="A Picture of Smart Glasses Website Design">
+            </picture>
+        </div>
+    </div>
+
+    <section class="block block--description">
+        <header class="description__header">
+            <div class="grid grid--1x2">
+                <div class="description__header-1">
+                    <div class="description__client">
+                        <p>Vue Glasses</p>
+                    </div>
+                    <p data-lang="project-category-ui">User Interface</p>
+                </div>
+                <div class="description__header-2">
+                    <p data-lang="project-selector-UI">UI Design</p>
+                    <p data-lang="project-vue-website-time">2022</p>
+                </div>
+            </div>
+        </header>
+        <div class="description description__hero">
+            <div class="grid grid--1x2">
+                <h2 data-lang="project-vue-website-title">Vue Website</h2>
+                <h3 data-lang="project-vue-website-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+            </div>
+            <div class="grid grid--1x2">
+                <div class="description__detail">
+                    <a href="#details" class="btn">
+                        <div class="btn__text-container">
+                            <div class="btn__text" data-lang="project-details">Details</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="description__badge">
+                    <span class="badge badge--primary" data-lang="project-category-ui">User Interface</span>
+
+                </div>
+            </div>
+        </div>
+        <div id="details" class="description description__banner">
+            <div class="grid">
+                <div class="card card--adaptation card--large vue--light-green fade-in hidden--md">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/images/vue_website_details_1.webp 1x, /images/vue_website_details_1@2x.webp 2x">
+                        <source type="image/jpg"
+                            srcset="/images/vue_website_details_1.jpg 1x, /images/vue_website_details_1@2x.jpg 2x">
+                        <img src="/images/vue_website_details_1@2x.jpg" alt="Screenshots of Vue Website Design">
+                    </picture>
+                </div>
+                <div class="card card--adaptation card--medium vue--light-green fade-in display--md">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/images/vue_website_details_1_m.webp 1x, /images/vue_website_details_1_m@2x.webp 2x">
+                        <source type="image/jpg"
+                            srcset="/images/vue_website_details_1_m.jpg 1x, /images/vue_website_details_1_m@2x.jpg 2x">
+                        <img src="/images/vue_website_details_1_m@2x.jpg" alt="Screenshots of Vue Website Design">
+                    </picture>
+                </div>
+                <div class="card card--adaptation vue--light-green fade-in hidden--md">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/images/vue_website_details_2.webp 1x, /images/vue_website_details_2@2x.webp 2x">
+                        <source type="image/jpg"
+                            srcset="/images/vue_website_details_2.jpg 1x, /images/vue_website_details_2@2x.jpg 2x">
+                        <img src="/images/vue_website_details_2@2x.jpg" alt="Screenshots of Vue Website Design">
+                    </picture>
+                </div>
+                <div class="card card--adaptation card--square vue--light-green fade-in display--md">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/images/vue_website_details_2_m.webp 1x, /images/vue_website_details_2_m@2x.webp 2x">
+                        <source type="image/jpg"
+                            srcset="/images/vue_website_details_2_m.jpg 1x, /images/vue_website_details_2_m@2x.jpg 2x">
+                        <img src="/images/vue_website_details_2_m@2x.jpg" alt="Screenshots of Vue Website Design">
+                    </picture>
+                </div>
+                <div class="grid grid--1x2">
+                    <div class="card card--adaptation vue--light-green order-2--md fade-in">
+                        <picture>
+                            <source type="image/webp"
+                                srcset="/images/vue_website_details_3.webp 1x, /images/vue_website_details_3@2x.webp 2x">
+                            <source type="image/jpg"
+                                srcset="/images/vue_website_details_3.jpg 1x, /images/vue_website_details_3@2x.jpg 2x">
+                            <img src="/images/vue_website_details_3@2x.jpg" alt="Screenshots of Vue Website Design">
+                        </picture>
+                    </div>
+                    <div class="card card--adaptation vue--dark-green fade-in">
+                        <picture>
+                            <source type="image/webp"
+                                srcset="/images/vue_website_details_4.webp 1x, /images/vue_website_details_4@2x.webp 2x">
+                            <source type="image/jpg"
+                                srcset="/images/vue_website_details_4.jpg 1x, /images/vue_website_details_4@2x.jpg 2x">
+                            <img src="/images/vue_website_details_4@2x.jpg" alt="Screenshots of Vue Website Design">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="description description__hero">
+            <div class="grid grid--1x2">
+                <div class="hidden--md"></div>
+                <h3 data-lang="project-vue-website-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+            </div>
+        </div>
+        <div class="description description__banner">
+            <div class="grid">
+                <div class="card card--adaptation card--large vue--natural fade-in hidden--md">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/images/vue_website_details_5.webp 1x, /images/vue_website_details_5@2x.webp 2x">
+                        <source type="image/jpg"
+                            srcset="/images/vue_website_details_5.jpg 1x, /images/vue_website_details_5@2x.jpg 2x">
+                        <img src="/images/vue_website_details_5@2x.jpg" alt="Screenshots of Vue Website Design">
+                    </picture>
+                </div>
+                <div class="card card--adaptation card--large vue--natural fade-in display--md">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/images/vue_website_details_5_m.webp 1x, /images/vue_website_details_5_m@2x.webp 2x">
+                        <source type="image/jpg"
+                            srcset="/images/vue_website_details_5_m.jpg 1x, /images/vue_website_details_5_m@2x.jpg 2x">
+                        <img src="/images/vue_website_details_5_m@2x.jpg" alt="Screenshots of Vue Website Design">
+                    </picture>
+                </div>
+                <div class="card card--adaptation card--large vue--natural fade-in hidden--md">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/images/vue_website_details_6.webp 1x, /images/vue_website_details_6@2x.webp 2x">
+                        <source type="image/jpg"
+                            srcset="/images/vue_website_details_6.jpg 1x, /images/vue_website_details_6@2x.jpg 2x">
+                        <img src="/images/vue_website_details_6@2x.jpg" alt="Screenshots of Vue Website Design">
+                    </picture>
+                </div>
+                <div class="card card--adaptation card--large vue--natural fade-in display--md">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/images/vue_website_details_6_m.webp 1x, /images/vue_website_details_6_m@2x.webp 2x">
+                        <source type="image/jpg"
+                            srcset="/images/vue_website_details_6_m.jpg 1x, /images/vue_website_details_6_m@2x.jpg 2x">
+                        <img src="/images/vue_website_details_6_m@2x.jpg" alt="Screenshots of Vue Website Design">
+                    </picture>
+                </div>
+                <div class="grid grid--1x2">
+                    <div class="card card--adaptation vue--sand fade-in">
+                        <picture>
+                            <source type="image/webp"
+                                srcset="/images/vue_website_details_7.webp 1x, /images/vue_website_details_7@2x.webp 2x">
+                            <source type="image/jpg"
+                                srcset="/images/vue_website_details_7.jpg 1x, /images/vue_website_details_7@2x.jpg 2x">
+                            <img src="/images/vue_website_details_7@2x.jpg" alt="Screenshots of Vue Website Design">
+                        </picture>
+                    </div>
+                    <div class="card card--adaptation vue--natural fade-in">
+                        <picture>
+                            <source type="image/webp"
+                                srcset="/images/vue_website_details_8.webp 1x, /images/vue_website_details_8@2x.webp 2x">
+                            <source type="image/jpg"
+                                srcset="/images/vue_website_details_8.jpg 1x, /images/vue_website_details_8@2x.jpg 2x">
+                            <img src="/images/vue_website_details_8@2x.jpg" alt="Screenshots of Vue Website Design">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="block block--dark footer">
+        <section class="footer__section">
+            <h5>2014 - <span class="current-year">2023</span></h5>
+            <h5 data-lang="footer-yibin">Yibin Design</h5>
+            <h5 id="footer-location" data-lang="footer-location">Shenzhen,</h5>
+        </section>
+        <section class="footer__section footer__contact">
+            <a class="footer__contact-btn">
+                <p data-lang="footer-contact-line-1">Have an idea?</p>
+                <div class="btn__text-container">
+                    <h1 data-lang="footer-contact-line-2">Get in touch</h1>
+                </div>
+            </a>
+            <div class="footer__available">
+                <a class="btn btn--secondary-outline">
+                    <div class="btn__text-container">
+                        <div class="icon__available"></div>
+                        <div class="btn__text" data-lang="footer-available">Available for Projects</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="footer__section footer__bottom">
+            <h5 data-lang="footer-slogan">Let’s make something amazing together.</h5>
+            <div class="footer__available">
+                <a class="btn btn--secondary-outline">
+                    <div class="btn__text-container">
+                        <div class="icon__available"></div>
+                        <div class="btn__text" data-lang="footer-available">Available for Projects</div>
+                    </div>
+                </a>
+            </div>
+            <h5>© <span class="current-year">2023</span> Yibin Design</h5>
+        </section>
+    </footer>
+
+    <script src="/js/jquery-3.7.1.js"></script>
+    <script src="/js/jquery.i18n.properties.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
