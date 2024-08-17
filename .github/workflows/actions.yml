@@ -7,7 +7,7 @@ permissions:
 jobs:
   npm-build:
     name: npm-build工作⚙️
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: 读取仓库内容🔍
